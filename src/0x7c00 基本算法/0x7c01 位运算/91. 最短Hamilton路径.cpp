@@ -23,7 +23,7 @@
     f大小：2^20 * 20 = 2*10^7   显然已经优化了一大截
 
     我们推导一下状态转移方程（其实我们只用枚举一下f [state] [j]怎么来的就好）
-    f [state] [j] = f [state_k] [k] = weight[k][j];
+    f [state] [j] = f [state_k] [k] + weight[k][j];
     state_k = state 去掉 j 之后的状态。并且要合法，所以要包含k
 */
 #include <cstring> // memset()
