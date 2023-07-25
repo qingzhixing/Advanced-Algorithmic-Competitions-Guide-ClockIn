@@ -1,5 +1,6 @@
 /*
     使用递归方法的话直接可以复用上一题的代码
+    这题我还提供一个非递归的做法
 */
 #include <iostream>
 using namespace std;
