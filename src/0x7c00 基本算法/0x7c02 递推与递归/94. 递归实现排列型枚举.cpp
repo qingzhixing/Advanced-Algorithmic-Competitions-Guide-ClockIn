@@ -39,11 +39,23 @@ void Enumerate(int timeLast)
         // 判断当前枚举的数字是否合法
         if (isSelected[currentNumber])
             continue;
+
+        // 选取该数字
+        selected[nextId++] = currentNumber;
+        isSelected[currentNumber] = true;
+
+        // 递归
+        Enumerate(timeLast - 1);
+
+        // 回溯
+        nextId--;
+        isSelected[currentNumber] = false;
     }
 }
 
 int main()
 {
-
+    cin >> n;
+    Enumerate(n);
     return 0;
 }
