@@ -57,10 +57,8 @@ void Enumerate(int timeLast, int lastNumber)
 int main()
 {
     cin >> n;
-    // 这里是为了满足SPJ要求，无任何意义
-    puts("");
     // 枚举选 1 ~ n 个数字的 n 种情况
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i <= n; i++)
     {
         Enumerate(i, 0);
     }
