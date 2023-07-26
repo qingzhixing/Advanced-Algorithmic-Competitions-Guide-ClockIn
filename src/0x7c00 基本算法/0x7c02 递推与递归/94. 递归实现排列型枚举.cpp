@@ -29,6 +29,17 @@ void PrintSelected()
 
 void Enumerate(int timeLast)
 {
+    if (timeLast == 0)
+    {
+        PrintSelected();
+        return;
+    }
+    for (int currentNumber = 1; currentNumber <= n; currentNumber++)
+    {
+        // 判断当前枚举的数字是否合法
+        if (isSelected[currentNumber])
+            continue;
+    }
 }
 
 int main()
